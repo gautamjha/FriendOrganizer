@@ -25,6 +25,7 @@ namespace FriendOrganizer.UI.Data
             using (var ctx= _ContextCreator())
             {
                 return await ctx.Friend.AsNoTracking().SingleAsync(x => x.Id == FriendId);
+                // To do refactor here ...
             }
            
         }
